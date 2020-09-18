@@ -13,6 +13,7 @@ const forecast = (longitude, latitude, callback) => {
           null,
           body.current.weather_descriptions[0] +
             `. It's currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degress out.`
+            + `  The humidity is ${body.current.humidity}%`
         );
       }
     });
